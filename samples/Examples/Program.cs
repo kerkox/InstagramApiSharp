@@ -37,8 +37,8 @@ namespace Examples
                 // create user session data and provide login details
                 var userSession = new UserSessionData
                 {
-                    UserName = "Username",
-                    Password = "Password"
+                    UserName = "dataker02",
+                    Password = "luap062319"
                 };
                 // if you want to set custom device (user-agent) please check this:
                 // https://github.com/ramtinak/InstagramApiSharp/wiki/Set-custom-device(user-agent)
@@ -102,7 +102,7 @@ namespace Examples
                 Console.WriteLine("Press 2 to start upload photo demo sample");
                 Console.WriteLine("Press 3 to start comment media demo sample");
                 Console.WriteLine("Press 4 to start stories demo sample");
-                Console.WriteLine("Press 5 to start demo with saving state of API instance");
+                Console.WriteLine("Press 5 to LIKE a las primeras 5 fotos");
                 Console.WriteLine("Press 6 to start messaging demo sample");
                 Console.WriteLine("Press 7 to start location demo sample");
                 Console.WriteLine("Press 8 to start collections demo sample");
@@ -114,7 +114,7 @@ namespace Examples
                     [ConsoleKey.D2] = new UploadPhoto(InstaApi),
                     [ConsoleKey.D3] = new CommentMedia(InstaApi),
                     [ConsoleKey.D4] = new Stories(InstaApi),
-                    [ConsoleKey.D5] = new SaveLoadState(InstaApi),
+                    [ConsoleKey.D5] = new LikePhoto(InstaApi),
                     [ConsoleKey.D6] = new Messaging(InstaApi),
                     [ConsoleKey.D7] = new LocationSample(InstaApi),
                     [ConsoleKey.D8] = new CollectionSample(InstaApi),
